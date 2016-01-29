@@ -1,0 +1,210 @@
+**Lorenz Gino Royo - PRE MADE WORDPRESS THEME
+**Please install necessary plugins for fast  wordpress development
+
+**Installing Wordpress in Local
+-Create folder name in xampp htdocs
+-Go to localhost/phpmyadmin, create database with the same name of folder name
+-Copy wordpress files inside folder name
+-Change wp-config-sample into wp-config.php, fill up db inputs and users
+-Go to localhost/foldername and install wordpress
+
+**Add necessary folders inside your theme folder
+-Add 
+css - for custom styles, other stlyes, bootstrap,masonry, etc
+fonts - for fonts use in wordpress theme
+functions - for additional functions, or separation of functions in functions.php
+images - theme images
+includes - other include files
+js - javascript files
+languages - language files for translation
+
+**Creating your theme
+-Go to themes, create theme folder name
+-create style.css, use the css comment for the guidelines
+-use image name 'screenshot' to use theme image background
+-create index.php, after these two. these will appear in appearance-theme correctly
+
+**Creating your basic php & css files
+-create
+Necessary Files
+style.css - necessary files for theme creation
+functions.php - for functions necessary files for theme creation
+index.php - necessary files for theme creation
+header.php - for header content
+footer.php - for footer content
+
+
+Optional Files
+front-page.php - for front page or main landing URL
+searchform.php - for search form
+search.php - for search page output result
+page.php - for single page
+single.php - for single post
+tag.php - for tag taxonomy
+404.php - for not found page
+archive.php - for archives
+author.php - for authors page
+category.php - for category taxonomy
+content.php
+
+-basic heirarchy
+	front-page.php -> home.php -> index.php
+	https://developer.wordpress.org/files/2014/10/template-hierarchy.png
+	https://developer.wordpress.org/themes/basics/template-hierarchy/
+-put get_header(); at top and get_footer(); in bottom in index.php
+-to get header.php and footer.php
+-main css, css frameworks, js frameworks in respective folders
+
+
+**Properly include css file and javascript file
+-create new file functions.php (must be in base folder)
+-add a function that calls the css and javascript file and put a action hook
+-call wp_head(); in header.php to get the action hook in the functions.php
+-call wp_footer(); in footer.php to get the action hook of footer
+-add get_header(); in index.php or other template to get header.php
+-add get_footer(); in index.php or other template to get footer.php
+
+*ADDING MENU/CREATING MENU IN DASHBOARD
+-Add new pages in dashboard panel
+-Add add_theme_support('menus') in functions.php
+-register your menu as register_nav_menus in functions.php
+-add an action
+-Add your pages in your created menu and add in a theme location
+-Call your menu in your template file using wp_nav_menu() with arguments
+
+
+*Using the Post Loop and custom body class
+-Add Post and Categories first for output
+-Go to Settings Reading to change the front page display to a static page: frontpage:home, postspage: blog or any page name that you want to be as posts page
+-Use THE LOOP to query post in your template
+-add body_class() to body element to add more classes in body
+
+*How to create custom and specialized page templates
+-create new file page-{slugname}.php or page-{page-id}.php, check wp heirarcy for more knowledge about this
+OR
+-create page template by commenting the page template title in the template (Template Name: 'Template Name')
+-you can also add page.php for single pages
+
+*Adding theme features with add_theme_support
+-add_theme_support('custom-background'); //adds background in the appearance menu
+-add_theme_support('custom-header'); //adds header ing the appearance menu
+-add_theme_support('post-thumbnails'); //adds feature image in creating post/page
+-search add_theme_support in google to know more
+
+*Add and Create post formats
+-add_theme_support('post-formats',array('aside','image','video'));
+-search for add_theme_support post-formats for more post-formats and info
+
+*Sidebar and Widget Areas
+-create function to call widget & sidebar in functions.php
+-set the arguments
+-add widget blocks in sidebar in widget menu in admin db
+-create a sidebar.php template and call the sidebar with its sidebar id using the dynamic_sidebar function
+-call the sidebar.php template using the get_sidebar();
+
+*Adding Custom Post Type if available
+-create function to register custom post in functions.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Creating a Premium Wordpress Theme
+
+*Folder Structure
+-add inc folder
+
+*Adding Custom Admin Page
+-create a new template in inc name function-admin.php
+-create a function , and call add_menu_page
+-add_action('admin_menu','functionName')
+-include function-admin.php template in functions.php
+
+*Adding Admin Subpages
+-call function add_submenu_page() in function-admin.php;
+
+*Create Custom Options with Settings API
+https://codex.wordpress.org/Settings_API
+https://codex.wordpress.org/Function_Reference/register_setting
+-create a template realest-admin
+-create a function(calls register_setting) that calls register_setting in function-admin.php
+-add an add_action function inside the function add_admin_page 'add_action('admin_init','function')'
+-create a form method=POST in your template created
+-inside the form call settings_field('group_name')
+-inside the function(calls register setting), add a new function add_settings_section
+-make the function callback
+-in the template add function do_settings_section
+-inside the function(calls register setting), add a new function add_settings_field
+-make the function callback
+-add submit button in realest-admin.php template in the form
+-add settings_error() before form
+-add options.php in action form
+-add submit_button() in actio0n form
+
+*Custom Social Media Fields and Sanitize Callbacks
+-add register_setting 
+-go to function realest_sidebar_name
+-add new input type and the get option
+To make next line field
+-add_settings_field
+-make a new function callback
+-register setting
+Sanitizing
+-add a sanitize callback function in register setting
+-create the sanitize callback function
+-add an input parameter
+-create an output variable calling the function sanitize_text_field with argument $input
+-return $output
+
+*Include Css in the administration panel
+-create new file enqueue.php
+-add function realest_load_admin_script()
+-register your css style
+-enqueue your css style
+
+*Include Media Upload
+-register your javascript in realest_load_admin_script()
+-enqueue your javascript
+-add wp_enqueue_media();
+-register setting logo
+-add_settings_field logo
+-make a function for logo
+-add input type button
+-add input text
+- go to realest.admin.js
+-add the code for the media upload
+
+
+*Extending walker class

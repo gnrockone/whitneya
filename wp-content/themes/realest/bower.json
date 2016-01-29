@@ -1,0 +1,28 @@
+{
+  "name": "test_npm_package",
+  "description": "this is a test/practice of making a bower.json",
+  "main": "index.js",
+  "authors": [
+    "GnRock"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "gnrock",
+    "wordpress",
+    "developer"
+  ],
+  "homepage": "https://github.com/gnrockone",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "modernizr": "~3.3.1",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
