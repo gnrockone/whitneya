@@ -6,9 +6,11 @@ wp-content/themes/realest/node_modules
 wp-local-config.php
 wp-admin
 wp-includes
-wp-content
-!wp-content/themes
-!wp-content/plugins/show-current-template
+/wp-content/*
+!/wp-content/themes
+!/wp-content/plugins
+/wp-content/plugins/*
+!/wp-content/plugins/show-current-template
 index.php
 license.txt
 readme.html
