@@ -7,8 +7,6 @@ wp-local-config.php
 wp-admin
 wp-includes
 wp-content/*
-wp-content/plugins
-!wp-content/plugins/show-current-template.0.2.2.zip
 !wp-content/themes
 index.php
 license.txt
@@ -26,3 +24,4 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+wp-content/plugins/show-current-template.0.2.2.zip
