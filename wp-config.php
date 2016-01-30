@@ -31,7 +31,7 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-local-config.php') ) {
 }
 
 //custom content directory
-define('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
+//define('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '');
 define('WP_MEMORY_lIMIT', '96M');
 
