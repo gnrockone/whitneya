@@ -6,6 +6,8 @@ wp-content/themes/realest/node_modules
 wp-local-config.php
 wp-admin
 wp-includes
+/*
+!/wp-content
 /wp-content/*
 !/wp-content/themes
 !/wp-content/plugins

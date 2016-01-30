@@ -4,7 +4,7 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-
+define('SITENAME',''); //put a sitename . This will be the prefix of table
 define('DB_NAME', 'database_name_here');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
@@ -45,7 +45,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = SITENAME . '_';
 
 /**
  * For developers: WordPress debugging mode.
