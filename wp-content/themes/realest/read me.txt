@@ -1,4 +1,13 @@
-**Lorenz Gino Royo - PRE MADE WORDPRESS THEME
+**Lorenz Gino Royo - STARTER THEME
+run npm install
+run bower install
+set up grunt browser sync proxy
+run grunt
+run grunt watch
+
+
+
+
 **Please install necessary plugins for fast  wordpress development
 
 **Installing Wordpress in Local

@@ -1,0 +1,2 @@
+add scss file in this directory. It will Sass, autoprefix in all.css
+then will put it in style.css in theme dir
