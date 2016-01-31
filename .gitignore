@@ -1,5 +1,5 @@
 # This is a comment. Files to ignore
-# git ls-files --others -i --exclude-standard  - to check ignored files
+# git ls-files --others -i --exclude-standard     - to check ignored files
 .htaccess
 /*
 wp-local-config.php

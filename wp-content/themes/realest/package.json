@@ -2,7 +2,6 @@
   "name": "test_npm_package",
   "version": "1.0.0",
   "dependencies": {
-    "colors": "^1.1.2",
     "imagemin": "^4.0.0"
   },
   "description": "this is a test/practice of making a package.json",
@@ -21,9 +20,6 @@
     "grunt-rsync": "~0.6.2",
     "grunt-spritesmith": "^5.0.0",
     "load-grunt-tasks": "~3.2.0",
-
-    "normalize": "~0.3.1",
-    "bootstrap": "~3.3.6"
   },
   "scripts": {
     "test": "not sure"
