@@ -19,7 +19,7 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-rsync": "~0.6.2",
     "grunt-spritesmith": "^5.0.0",
-    "load-grunt-tasks": "~3.2.0",
+    "load-grunt-tasks": "~3.2.0"
   },
   "scripts": {
     "test": "not sure"
