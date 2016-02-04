@@ -10,6 +10,7 @@ require get_template_directory() . '/functions/functions-shortcodes.php';
 require get_template_directory() . '/functions/functions-images.php';
 require get_template_directory() . '/functions/functions-breadcrumbs.php';
 require get_template_directory() . '/functions/functions-comments.php';
+require get_template_directory() . '/functions/functions-theme-options.php';
 
 /*
 	==================================================
@@ -28,6 +29,17 @@ add_theme_support('html5',array('search-form','comment-form','gallery','comment-
 // hard-coded <title> tag in the document head, and expect WordPress to
 // provide it for us.
 add_theme_support('title-tag');
+
+
+function rl_go_top_btn() {
+	echo '<a href="#" class="go-top">Go Top</a>';
+	echo '<h1>' . get_option('sticky_back_to_top') .'test'. '</h1>';
+}
+if( get_option('sticky_back_to_top')) { 
+	add_action('before_body_end','rl_go_top_btn'); 
+}
+
+
 
 
 ?>

@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(grunt) {
-
+    var hostProxy = '';
     // load all grunt tasks matching the `grunt-*` pattern
     require('load-grunt-tasks')(grunt);
 
@@ -11,11 +11,14 @@ module.exports = function(grunt) {
             sass: {
                 files: ['*.scss','css/*.scss'],
                 //files: ['assets/styles/**/*.{scss,sass}','*.scss'],
-                tasks: ['sass', 'autoprefixer', 'cssmin']
+                tasks: ['sass', 'autoprefixer', 'cssmin'],
+                options: {
+                    livereload: true,
+                }
             },
             js: {
                 //files: '<%= jshint.all %>',
-                files: ['js/*.js','!js/*.min.js','Gruntfile.js'],
+                files: ['js/*.js','!js/*.min.js','Gruntfile.js','!js/modernizr.js'],
                 tasks: ['jshint', 'uglify']
                 //Do not include generated minified to avoid endless loop. Add ! then
             },
@@ -160,11 +163,11 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src : ['style.css', 'js/*.js', '../../uploads/*.{png,jpg,jpeg,gif,webp,svg}']
+                    src : ['style.css', 'js/*.js', '../../uploads/*.{png,jpg,jpeg,gif,webp,svg}','css/all.css']
                 },
                 options: {
                     //proxy: "local.dev",
-                    proxy: 'localhost',
+                    proxy: hostProxy,
                     //proxy: 'hostalias'
                     watchTask: true,
                     browser: "google chrome"
