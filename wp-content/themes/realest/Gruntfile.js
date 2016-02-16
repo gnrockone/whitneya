@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(grunt) {
-    var hostProxy = '';
+    var hostProxy = 'www.whitneya.dev';
     // load all grunt tasks matching the `grunt-*` pattern
     require('load-grunt-tasks')(grunt);
 
@@ -26,6 +26,12 @@ module.exports = function(grunt) {
                 //files: ['assets/images/**/*.{png,jpg,gif}'],
                 files: ['images/*.{png,jpg,gif}','!images/theme_images/*.{png,jpg,gif}'],
                 tasks: ['imagemin']
+            },
+            php: {
+                files: ['*.php'],
+                options: {
+                    livereload: 35729
+                }
             }
         },
 
@@ -163,7 +169,7 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src : ['style.css', 'js/*.js', '../../uploads/*.{png,jpg,jpeg,gif,webp,svg}','css/all.css']
+                    src : ['style.css', 'js/*.js', '../../uploads/*.{png,jpg,jpeg,gif,webp,svg}','css/all.css','*.php']
                 },
                 options: {
                     //proxy: "local.dev",

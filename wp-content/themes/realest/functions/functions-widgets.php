@@ -1,5 +1,21 @@
 <?php 
 
+if (!function_exists('nnp_widget_setup')) {
+	function nnp_widget_setup() {
+		register_sidebar( array(
+		'name' => 'Blog Sidebar',
+		'id' => 'sidebar1',
+		'class' => 'custom-sidebar',
+		'description' => 'Standard Sidebar',
+		'before_widget' => '<div id="%1$s" class="widget-item %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>'
+		));
+	}
+	add_action('widgets_init','nnp_widget_setup');
+}
+
 /*
 	==================================================
 	| Sidebar & Widget Setup Function

@@ -33,18 +33,15 @@
 <?php do_action('after_body_start'); ?>
 	<div id="main-container" class="container-fluid">
 		<!--header-->
-		<?php if ( has_header_image() ): ?>
-		<div class="container">
-			<img id="header-image" style="width:100%;" src="<?php echo (get_header_image()); ?>" alt="<?php echo (get_bloginfo('title')); ?>"
-			id="header-image"/>
+		<div class="header-container container">
+			<h1 id="header-text">Whitney A.</h1>
 		</div>
-		<?php endif; ?>
 		<!--menu-->
 		<!--container-fluid for full width menu-->
 		<!--container for container width menu-->
 		<div class="container-fluid">
 			<nav class="navbar navbar-default navbar-static-top" role="navigation">
-				<div class="container-fluid">
+				<div class="container navbar-container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
 						data-target="#navbar-collapse-1" aria-expanded="false">
@@ -53,28 +50,18 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-							<?php 
-								$logo = null;
-								if ($logo) :
-									echo $logo;
-								else:
-									echo bloginfo('title');
-								endif;
-							?>
-						</a>
 					</div> <!--end of navbar -header -->
 					<?php
 						//get_search_form() has navbar-right thats why use custom search;
 						//get_search_form() gets searchform.php
 						//get search form for header - searchheader.php
-						get_template_part('searchheader');
+						//get_template_part('searchheader');
 			            wp_nav_menu( array(
 			                'menu'              => 'primary',
 			                'theme_location'    => 'primary',
 			                'depth'             => 2,
 			                'container'         => 'div',
-			                'container_class'   => 'collapse navbar-collapse navbar-right',
+			                'container_class'   => 'collapse navbar-collapse',
 			        		'container_id'      => 'navbar-collapse-1',
 			                'menu_class'        => 'nav navbar-nav',
 			                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',

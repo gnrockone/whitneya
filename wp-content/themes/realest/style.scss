@@ -13,7 +13,150 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+$black : #222;
+$link : #687ce0;
+$linkhover : #999999;
+$gray : #b3b3b3;
+$grayborder: #d1d1d1;
+a {
+	&:hover {
+		text-decoration:none;
+	}
+}
+.socialmedias-anchor {
+	color: $gray;
+	&:hover {
+		color: $black;
+	}
+}
+.thepost-content a{
+	color:black;
+	text-transform: none;
+	font-weight: bold;
+}
 
+.thepost-socialmedias {
+	padding: 25px 0px 25px 0;
+	border-top: 1px dashed $grayborder;
+	border-bottom: 1px dashed $grayborder;
+	line-height: 47px;
+	margin:3px;
+}
+.socialmedias-anchor {
+	height:45px;
+	width:45px;
+	max-height:45px;
+	max-width:45px;
+	border-radius: 50%;
+	border: 1px solid $grayborder;
+	display: inline-block;
+	vertical-align: middle;
+	line-height:45px;
+	&:hover {
+		border-color: $gray;
+		height:48px;
+		width:48px;
+		line-height: 48px;
+		max-height: 48px;
+		max-width: 48px;
+	}	
+}
+
+.thepost-title a:hover {
+	color: $linkhover;
+	text-decoration: none;
+}
+
+.thepost-categories,
+.thepost-tags {
+	a {
+		color: $gray;
+		text-decoration:none;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
+.glyphicon-comment:before,
+.glyphicon-cloud:before,
+.glyphicon-tags:before,
+.glyphicon-heart-empty:before {
+	margin-left:5px;
+	margin-right: 5px;
+}
+
+.thepost-meta {
+	color: $gray;
+	font-size: 11px;
+	margin: 15px 0 15px 0;
+}
+.blog-main {
+	padding-left:60px;
+	padding-right:60px;
+	p {
+		font-size: 15px;
+	}
+	.thepost-title {
+		font-size: 22px;
+		line-height: 40px;
+		color: $link;
+	}
+
+}
+article.blog-container {
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.sidebar-padding {
+	padding:20px;
+}
+.blog-sidebar {
+	border: 1px solid black;
+}
+
+#header-text {
+	text-align: center;
+	font-weight: normal;
+	font-family: 'Playfair Display';
+	font-size: 73px;
+	line-height: 146px;
+	color: $black;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* centerize menu */
+.navbar-nav {
+	width:100%;
+	text-align:center;
+	li {
+		float:none;
+		display:inline-block;
+		text-transform: uppercase;
+		a:after {
+			content: '|';
+			margin-left: 12px;
+		}
+	}
+	li:last-child a:after {
+		content: '';
+		margin-left: 0px;
+	}
+}
+.navbar-container {
+	border-top: 1px solid black;
+}
+.navbar-default {
+	background-color: #fff;
+	border: 0px;
+}
+
+body {
+	font-family: 'Open Sans';
+	font-size: 18px;
+	line-height: 25px;
+	color: $black;
+}
 
 /*
 	==================================================

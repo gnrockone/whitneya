@@ -11,6 +11,10 @@
 	| Category Pagination
 	==================================================
  */
+/**
+ * use this in a category.php only
+ *
+ */
 function nnp_category_pagination() {
 	foreach(get_categories() as $all_cat) {  $cat_ids[] = $all_cat->term_id; }
   	$this_cat = get_query_var('cat');

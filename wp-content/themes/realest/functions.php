@@ -11,6 +11,7 @@ require get_template_directory() . '/functions/functions-images.php';
 require get_template_directory() . '/functions/functions-breadcrumbs.php';
 require get_template_directory() . '/functions/functions-comments.php';
 require get_template_directory() . '/functions/functions-theme-options.php';
+require get_template_directory() . '/functions/functions-widget-blocks.php';
 
 /*
 	==================================================
