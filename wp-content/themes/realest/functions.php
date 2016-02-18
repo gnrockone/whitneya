@@ -34,7 +34,6 @@ add_theme_support('title-tag');
 
 function rl_go_top_btn() {
 	echo '<a href="#" class="go-top">Go Top</a>';
-	echo '<h1>' . get_option('sticky_back_to_top') .'test'. '</h1>';
 }
 if( get_option('sticky_back_to_top')) { 
 	add_action('before_body_end','rl_go_top_btn'); 

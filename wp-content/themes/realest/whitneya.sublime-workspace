@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"if",
+				"ifelse	<?php if (…) ?> … <?php else ?> … <?php endif ?>"
+			],
+			[
+				"thel",
+				"theloop	The Loop"
+			],
+			[
+				"ex",
+				"extends"
+			],
+			[
+				"after",
+				"after_widget"
+			],
+			[
+				"stri",
+				"strip_tags"
+			],
+			[
+				"get_field",
+				"get_field_id"
+			],
+			[
+				"get_fiel",
+				"get_field_id"
+			],
+			[
+				"af",
+				"after_widget"
+			],
+			[
+				"bef",
+				"before_widget"
+			],
+			[
+				"get_f",
+				"get_field_name"
+			],
+			[
+				"get_fie",
+				"get_field_id"
+			],
+			[
+				"__",
+				"__construct"
+			],
+			[
+				"WP_",
+				"WP_Widget"
+			],
+			[
+				"new",
+				"new_instance"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"esc",
+				"esc_attr	(front-page.php)"
+			],
+			[
+				"about_whi",
+				"about_whitney_2"
+			],
+			[
+				"register",
+				"register_widget"
+			],
+			[
 				"face",
 				"facebook_url"
 			],
@@ -204,10 +276,13 @@
 	"buffers":
 	[
 		{
-			"file": "Gruntfile.js",
+			"contents": "<?php\n/**\n * The template for displaying the header\n *\n * Displays all of the head element and everything up until the \"site-content\" div.\n *\n * @package WordPress\n * @subpackage Realest\n * @since Realest 1.0\n */\n?>\n<!DOCTYPE html>\n<html <?php language_attributes(); ?>>\n<head>\n	<meta charset=\"<?php bloginfo( 'charset' ); ?>\"><!--gets the charset utf-8-->\n	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n	<!--pingback - server accepts POST request only-->\n	<link rel=\"pingback\" href=\"<?php bloginfo( 'pingback_url' ); ?>\">\n	<?php\n	//gets the action wp_head\n	//gets the title tag - if add_theme_support('title-tag') is declared\n	wp_head(); ?>\n</head>\n<?php if ( is_front_page() ):\n	$front_page_class = array('front-page','home-page'); \n	else: \n	$front_page_class = null; \n	endif;\n?>\n<?php do_action('before_body_start'); ?>\n<body <?php body_class( $front_page_class ); ?> >\n<?php do_action('after_body_start'); ?>\n	<div id=\"main-container\" class=\"container-fluid\">\n		<!--header-->\n		<div class=\"header-container container\">\n			<h1 id=\"header-text\">Whitney A.</h1>\n		</div>\n		<!--menu-->\n		<!--container-fluid for full width menu-->\n		<!--container for container width menu-->\n		<div class=\"container-fluid\">\n			<nav class=\"navbar navbar-default navbar-static-top\" role=\"navigation\">\n				<div class=\"container navbar-container\">\n					<div class=\"navbar-header\">\n						<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\"\n						data-target=\"#navbar-collapse-1\" aria-expanded=\"false\">\n							<span class=\"sr-only\">Toggle navigation</span>\n							<span class=\"icon-bar\"></span>\n							<span class=\"icon-bar\"></span>\n							<span class=\"icon-bar\"></span>\n						</button>\n					</div> <!--end of navbar -header -->\n					<?php\n						//get_search_form() has navbar-right thats why use custom search;\n						//get_search_form() gets searchform.php\n						//get search form for header - searchheader.php\n						//get_template_part('searchheader');\n			            wp_nav_menu( array(\n			                'menu'              => 'primary',\n			                'theme_location'    => 'primary',\n			                'depth'             => 2,\n			                'container'         => 'div',\n			                'container_class'   => 'collapse navbar-collapse',\n			        		'container_id'      => 'navbar-collapse-1',\n			                'menu_class'        => 'nav navbar-nav',\n			                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',\n			                'walker'            => new wp_bootstrap_navwalker())\n			            );\n        			?>\n				</div><!--end of container fluid-->\n			</nav><!--end of nav tag-->\n		</div> <!--end of container menu-->\n		<!--end of menu-->\n<!--closing body tag is in footer-->\n<!--closing html tag is in footer-->",
+			"file": "header.php",
+			"file_size": 2919,
+			"file_write_time": 130999364358552483,
 			"settings":
 			{
-				"buffer_size": 7012,
+				"buffer_size": 2844,
 				"line_ending": "Windows"
 			}
 		},
@@ -220,10 +295,26 @@
 			}
 		},
 		{
-			"file": "header.php",
+			"file": "style.scss",
 			"settings":
 			{
-				"buffer_size": 2844,
+				"buffer_size": 4591,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "functions/functions-post.php",
+			"settings":
+			{
+				"buffer_size": 3956,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "home.php",
+			"settings":
+			{
+				"buffer_size": 2284,
 				"line_ending": "Windows"
 			}
 		},
@@ -231,15 +322,7 @@
 			"file": "front-page.php",
 			"settings":
 			{
-				"buffer_size": 2237,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "style.scss",
-			"settings":
-			{
-				"buffer_size": 3301,
+				"buffer_size": 2284,
 				"line_ending": "Windows"
 			}
 		},
@@ -255,15 +338,23 @@
 			"file": "functions/functions-widget-blocks.php",
 			"settings":
 			{
-				"buffer_size": 2632,
+				"buffer_size": 11340,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "style.css",
+			"file": "single.php",
 			"settings":
 			{
-				"buffer_size": 2729,
+				"buffer_size": 296,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/ginsk_000/Documents/Web Development/Sealyspirit/wp-content/themes/flounder/lib/functions-sidebars.php",
+			"settings":
+			{
+				"buffer_size": 20371,
 				"line_ending": "Windows"
 			}
 		}
@@ -282,6 +373,10 @@
 			[
 				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
 			],
 			[
 				"sass",
@@ -326,10 +421,6 @@
 			[
 				"htm",
 				"Set Syntax: HTML"
-			],
-			[
-				"php",
-				"Set Syntax: PHP"
 			],
 			[
 				"text",
@@ -381,23 +472,29 @@
 	},
 	"expanded_folders":
 	[
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions"
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest"
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/thepost_socialmedias.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/single.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/searchheader.php",
+		"/C/Users/ginsk_000/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/wp-loop.sublime-snippet",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-widgets.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.css",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/Gruntfile.js",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/Gruntfile.js",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-theme-options.php",
 		"/D/GnRock/Projects/Practice Practice/CSS Practice/Media Queries.txt",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-scripts.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-local-config.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-config.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/bower.json",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/.jshintrc",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-widgets.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-widgets.php",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/bower_components/New folder/bootstrap/dist/css/bootstrap.css",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.css.map",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.css",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/fonts/stylesheet.css",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.scss",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/bower_components/bootstrap/dist/js/npm.js",
@@ -406,15 +503,12 @@
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-menus.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/wordpress template/wp-content/themes/twentyfifteen/header.php",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/Gruntfile.js",
 		"/D/xampp/htdocs/fme/wp-content/themes/realest/Gruntfile.js",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/home.php",
 		"/C/Users/ginsk_000/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/php-tag.sublime-snippet",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/Gruntfile.js",
 		"/C/Users/ginsk_000/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
 		"/D/GnRock/Documents/Important User and Password and Other Details.txt",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-theme-options.php",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-theme-options.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-images.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-images.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-custom-taxonomies.php",
@@ -509,11 +603,7 @@
 		"/D/GnRock/Documents/Resume/Portfolios/FME Finance/details.txt",
 		"/D/xampp/htdocs/backup/wp-content/themes/iamfoodblog/functions/functions-scripts.php",
 		"/D/xampp/htdocs/backup/wp-content/themes/iamfoodblog/css/flexslider.css",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/css/wordpress-default.css",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/index.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/bower_components/modernizr/node_modules/phantomjs/lib/phantom/README.md",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Theme Creation Basic Template - Rename This As Your Theme Name/css/wordpress-default.css",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/bower_components/masonry/dist/masonry.pkgd.js"
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/css/wordpress-default.css"
 	],
 	"find":
 	{
@@ -531,6 +621,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"main",
+			"_set",
+			"wpb",
+			".$",
+			".'",
+			"?>",
+			"<?php echo ",
+			"<a",
+			"=.",
+			".=",
+			"<?php",
+			"facebook",
+			"Facebook",
+			"facebook",
+			"Facebook",
+			"facebook",
+			"Facebook",
+			"facebook",
+			"twitter",
+			"title",
 			"20",
 			"47",
 			"50",
@@ -638,27 +748,7 @@
 			" ?>",
 			"?>\n",
 			"inputSearch",
-			"js",
-			"yourthemename",
-			"nnp_menu_setup",
-			"aria-",
-			"aria",
-			"expanded",
-			"$",
-			"ul",
-			"-submenu",
-			"tax",
-			"-",
-			"Camera",
-			"camera",
-			" 'your-plugin-textdomain' ",
-			", 'your-plugin-textdomain' ",
-			"writer",
-			"Writer",
-			"writer",
-			"Camera",
-			"?>\n",
-			"respond"
+			"js"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -681,33 +771,33 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Gruntfile.js",
+					"file": "header.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7012,
+						"buffer_size": 2844,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1420,
-								1420
+								992,
+								992
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 216.0,
+						"translation.y": 294.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -723,19 +813,17 @@
 						"selection":
 						[
 							[
-								1424,
-								1424
+								1868,
+								1868
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 216.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
@@ -743,86 +831,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2844,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1821,
-								1821
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 756.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "front-page.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2151,
-								2151
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 4,
 					"file": "style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3301,
+						"buffer_size": 4591,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								952,
-								952
+								1929,
+								1929
 							]
 						],
 						"settings":
@@ -832,14 +853,111 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1255.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
+					"buffer": 3,
+					"file": "functions/functions-post.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3707,
+								3707
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2039.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2284,
+								2284
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 191.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
 					"buffer": 5,
+					"file": "front-page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2182,
+								2182
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "functions/functions-custom-made.php",
 					"semi_transient": false,
 					"settings":
@@ -851,8 +969,8 @@
 						"selection":
 						[
 							[
-								319,
-								319
+								1910,
+								1910
 							]
 						],
 						"settings":
@@ -862,27 +980,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 486.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "functions/functions-widget-blocks.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2632,
+						"buffer_size": 11340,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2047,
-								2047
+								11274,
+								11274
 							]
 						],
 						"settings":
@@ -892,41 +1010,69 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 756.0,
+						"translation.y": 5890.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "style.css",
+					"buffer": 8,
+					"file": "single.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2729,
+						"buffer_size": 296,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								291,
+								291
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/ginsk_000/Documents/Web Development/Sealyspirit/wp-content/themes/flounder/lib/functions-sidebars.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5504,
+								5504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5346.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -987,6 +1133,22 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"function",
+				"functions\\functions-post.php"
+			],
+			[
+				"theme",
+				"functions\\functions-theme-options.php"
+			],
+			[
+				"widget",
+				"functions\\functions-widget-blocks.php"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			]
 		],
 		"width": 0.0
 	},

@@ -18,6 +18,8 @@ $link : #687ce0;
 $linkhover : #999999;
 $gray : #b3b3b3;
 $grayborder: #d1d1d1;
+$white: #fff;
+
 a {
 	&:hover {
 		text-decoration:none;
@@ -93,7 +95,7 @@ a {
 .blog-main {
 	padding-left:60px;
 	padding-right:60px;
-	p {
+	p,div {
 		font-size: 15px;
 	}
 	.thepost-title {
@@ -158,6 +160,30 @@ body {
 	color: $black;
 }
 
+.blog-sidebar h5, h4.widget-title {
+	font-weight: 300;
+	font-style: normal;
+	font-size: 21px;
+	line-height: 32px;
+	font-family: Open Sans;
+	color: $black;
+	margin: 12px 0 12px 0;
+	border-bottom: 1px dashed #E9E9E9;
+	padding-bottom: 14px;
+	text-transform: uppercase;
+}
+.widget-item {
+	padding: 38px 0px;
+	background: $white;
+	border-bottom: 1px solid $black;
+	margin: 0 28px 0;
+}
+.socialmedias-sidebar-anchor {
+	margin: 0 8px 0 8px;
+	font-size: 30px;
+	color: $black;
+}
+
 /*
 	==================================================
 	| Sticky Back to Top button
@@ -177,3 +203,58 @@ body {
 .go-top:hover {
 	background-color: rgba(0, 0, 0, 0.6);
 }
+
+
+/*adding icon inside input text*/
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+.glyphicon {
+	color: gray;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/*end*/
+
+
+.btn-black {
+	color: $white;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 26px;
+	background-color: $black;
+	border: none;
+	border-radius: 0;
+	&:hover {
+		color: $gray;
+	}
+}
+.box-padding {
+	padding: 2pc;
+	box-sizing: border-box;
+}
+
+.nl-labels {
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	font-weight: 300;
+}
+
+
