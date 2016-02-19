@@ -276,4 +276,39 @@ body {
 	color: $black;
 }
 
+.wp-caption {
+	border:none;
+}
 
+.page-container {
+	.thepage-content {
+		font-size: 15px;
+		line-height: 25px;
+		font-family: 'Open Sans';
+		color: $black;
+		font-weight: 300;
+	}
+}
+.single-pagination {
+	font-family: 'Open Sans';
+	font-style: italic;
+	color: $black;
+	line-height: 30px;
+	font-weight: 300;
+}
+.last-section {
+	border-top: 1px solid #fff;
+	padding: 20px 20px 20px 0;
+	color: #a2a8ad;
+	font-size: 13px;
+	background: #f7f7f7;
+	#footer-text {
+	font-size: 13px;
+    line-height: 30px;
+    text-align: right;
+	}
+}
+
+.blogs-container {
+	padding-bottom: 40px;
+}
