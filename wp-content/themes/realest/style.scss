@@ -86,17 +86,30 @@ a {
 	margin-left:5px;
 	margin-right: 5px;
 }
-
-.thepost-meta {
-	color: $gray;
-	font-size: 11px;
-	margin: 15px 0 15px 0;
+.search-label-container {
+	margin-bottom: 20px;
+	#search-label {
+	font-weight: 300;
+	font-style: normal;
+	font-size: 38px;
+	line-height: 40px;
+	font-family: 'Open Sans';
+	color: $black;
+	margin: 12px 0 12px 0;
+	}
 }
+
+
 .blog-main {
 	padding-left:60px;
 	padding-right:60px;
 	p,div {
 		font-size: 15px;
+	}
+	.thepost-meta {
+	color: $gray;
+	font-size: 11px;
+	margin: 15px 0 15px 0;
 	}
 	.thepost-title {
 		font-size: 22px;
@@ -105,6 +118,8 @@ a {
 	}
 
 }
+
+
 article.blog-container {
 	padding-top:40px;
 	padding-bottom:40px;
@@ -255,6 +270,10 @@ body {
 	line-height: 20px;
 	color: #333;
 	font-weight: 300;
+}
+
+#header-text a{
+	color: $black;
 }
 
 

@@ -34,7 +34,7 @@
 	<div id="main-container" class="container-fluid">
 		<!--header-->
 		<div class="header-container container">
-			<h1 id="header-text">Whitney A.</h1>
+			<h1 id="header-text"><a href="/">Whitney A.</a></h1>
 		</div>
 		<!--menu-->
 		<!--container-fluid for full width menu-->

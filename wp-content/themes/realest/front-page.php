@@ -1,19 +1,12 @@
 <?php get_header(); ?>
 	<div class="container blogs-container">
-		<?php if( is_active_sidebar( 'sidebar1' )):  ?>
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 blog-sidebar sidebar-padding">
-			<?php dynamic_sidebar( 'sidebar1' ); ?>
-			</div>
-			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 blog-main">
-		<?php else: ?>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blog-main">
-		<?php endif; ?>
+		<?php get_sidebar('sidebar'); ?>
 		<?php if( have_posts() ): while( have_posts() ): the_post(); ?>
 				<article class="blog-container">
 					<h2 class="thepost-title"><a href="<?php echo esc_attr( the_permalink() ); ?>"><?php the_title(); ?></a></h2>
 					<div class="thepost-meta">
 						<span class="thepost-date"><?php the_time('l, F j, Y'); ?> / </span>
-						<span class="glyphicon glyphicon-comment thepost-comments"><?php comments_number('0', '1', '%' );?> /</span>
+						<span class="glyphicon glyphicon-comment thepost-comments"><<?php comments_number('0', '1', '%' );?> /</span>
 						<span class="glyphicon glyphicon-cloud thepost-categories"><?php the_category(", "); ?> /</span>
 						<span class="glyphicon glyphicon-tags thepost-tags"><?php the_tags(); ?> /</span>
 						<span class="glyphicon glyphicon-heart-empty thepost-like">0</span>
@@ -39,8 +32,8 @@
 
 			<?php endwhile; ?>
 		<?php else: ?>
-				<h1>wala</h1>
+				<h1>No results</h1>
 		<?php endif;  ?>
-			</div>
-	</div>
+			</div><!---end of blog-main-->
+	</div><!--end of blogs-container-->
 <?php get_footer(); ?>

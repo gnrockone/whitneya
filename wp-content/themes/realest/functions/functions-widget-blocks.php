@@ -201,9 +201,9 @@ class search_whitney extends WP_Widget {
 		echo $args['before_widget'];
 		?>
 		<div class="inner-addon right-addon">
-			<form role="form" method="POST" action="search.php">
-			    <i class="glyphicon glyphicon-search"></i>
-			    <input type="text" class="form-control" placeholder="search" />
+			<form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>" class="navbar-form form-inline">
+			    <input type="search" id="" class="form-control" placeholder="Search Blog" 
+			    	value="<?php echo get_search_query() ?>" name="s" title="Search" />
 			</form>
 		</div>
 		<?php
