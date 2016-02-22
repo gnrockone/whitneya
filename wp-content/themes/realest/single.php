@@ -13,6 +13,8 @@
 			'rightclass' => 'right-single-pagination single-pagination pull-right'
 		); ?>
 		<?php rl_single_pagination($args); ?>
+		<?php comments_template(); ?>
 		</div><!--end of main-container located in sidebar.php-->
+		
 	</div>
 <?php get_footer(); ?>

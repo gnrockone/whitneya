@@ -79,11 +79,11 @@ function rl_category_pagination() {
 	echo '<div class="' .$class['class']. '">';
 	if ($prev_post_position >= 0) {
 		$prev_post_ID = array_slice($posts, $prev_post_position ,1);
-		echo '<a class="'.$class['leftclass'].'" href="' . get_post_permalink($prev_post_ID[0]) . '">&laquo; ' . get_post($prev_post_ID[0])->post_title . '</a>';
+		echo '<a class="'.$class['leftclass'].'" href="' . get_post_permalink($prev_post_ID[0]). '"> Previous' . '</a>';
 	}
 	if ($next_post_position < count($posts) ) {
 		$next_post_ID = array_slice($posts, $next_post_position ,1);
-		echo '<a class="'.$class['rightclass'].'" href="' . get_post_permalink($next_post_ID[0]) . '">' . get_post($next_post_ID[0])->post_title . ' &raquo;</a>';
+		echo '<a class="'.$class['rightclass'].'" href="' . get_post_permalink($next_post_ID[0]) . '">' . 'Next' . '</a>';
 	}
 	echo '</div>';
  }

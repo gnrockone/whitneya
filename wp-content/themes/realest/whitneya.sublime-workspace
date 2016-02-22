@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"filtering",
+				"filteringsecond"
+			],
+			[
+				"gethe",
+				"get_header	(home.php)"
+			],
+			[
+				"get",
+				"getheader	(get_header.sublime-snippet)"
+			],
+			[
 				"WP_Quer",
 				"WP_Query"
 			],
@@ -280,74 +292,27 @@
 	"buffers":
 	[
 		{
-			"file": "header.php",
+			"file": "single.php",
 			"settings":
 			{
-				"buffer_size": 2860,
+				"buffer_size": 767,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "functions/functions-theme-options.php",
+			"contents": "<VirtualHost *:80>\n    <Directory \"D:/xampp/htdocs/prestigeonlineservices\">\n        Options Indexes FollowSymLinks MultiViews\n        AllowOverride all\n        Order Deny,Allow\n        Allow from all\n    </Directory>\n    ServerName www.prestigeonlineservices.dev\n    ServerAlias prestigeonlineservices.dev\n    DocumentRoot \"D:/xampp/htdocs/prestigeonlineservices\"\n</VirtualHost>",
 			"settings":
 			{
-				"buffer_size": 5848,
-				"line_ending": "Windows"
+				"buffer_size": 378,
+				"line_ending": "Windows",
+				"name": "<VirtualHost *:80>"
 			}
 		},
 		{
-			"file": "Gruntfile.js",
+			"file": "/D/xampp/apache/conf/extra/httpd-vhosts.conf",
 			"settings":
 			{
-				"buffer_size": 7049,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "functions/functions-post.php",
-			"settings":
-			{
-				"buffer_size": 3956,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "home.php",
-			"settings":
-			{
-				"buffer_size": 2284,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "search.php",
-			"settings":
-			{
-				"buffer_size": 636,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "sidebar.php",
-			"settings":
-			{
-				"buffer_size": 337,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "style.scss",
-			"settings":
-			{
-				"buffer_size": 4846,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "front-page.php",
-			"settings":
-			{
-				"buffer_size": 2025,
+				"buffer_size": 2679,
 				"line_ending": "Windows"
 			}
 		},
@@ -360,10 +325,85 @@
 			}
 		},
 		{
-			"file": "functions/functions-custom-made.php",
+			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 2543,
+				"buffer_size": 2070,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "functions/functions-comments.php",
+			"settings":
+			{
+				"buffer_size": 1965,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "comments.php",
+			"settings":
+			{
+				"buffer_size": 2072,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 2860,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "archive-video.php",
+			"settings":
+			{
+				"buffer_size": 619,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/prestigeonlineservices/wp-config.php",
+			"settings":
+			{
+				"buffer_size": 3037,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Instructions\n1. Create the database\n2. Go to database, import your sql\n3. Go to sql tab\n4. Paste the script with your old url and new url\n5. Make sure your table is the same \n	ex. change prefix to your new prefix\n6. Run script\n7. Try not to include http://\n\n\nUPDATE wp_options SET option_value = replace(option_value, 'www.prestigeonlineservices.dev', 'www.prestigeonlineservicess.dev') WHERE option_name = 'home' OR option_name = 'siteurl';\n\nUPDATE wp_posts SET guid = replace(guid, 'www.prestigeonlineservices.dev','www.prestigeonlineservicess.dev');\n\nUPDATE wp_posts SET post_content = replace(post_content, 'www.prestigeonlineservices.dev', 'www.prestigeonlineservicess.dev');\n\nUPDATE wp_postmeta SET meta_value = replace(meta_value,'www.prestigeonlineservices.dev','www.prestigeonlineservicess.dev');",
+			"file": "/D/GnRock/Projects/Web Development/Wordpress Things/Update OLD URL to NEW URL SQL Script.txt",
+			"file_size": 826,
+			"file_write_time": 131005758096033749,
+			"settings":
+			{
+				"buffer_size": 805,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "searchform_videos.php",
+			"settings":
+			{
+				"buffer_size": 942,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.scss",
+			"settings":
+			{
+				"buffer_size": 5410,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/GnRock/Projects/Web Development/Wordpress Things/query_vars.php",
+			"settings":
+			{
+				"buffer_size": 1583,
 				"line_ending": "Windows"
 			}
 		}
@@ -384,6 +424,14 @@
 				"Set Syntax: PHP"
 			],
 			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
 				"insta",
 				"Package Control: Install Package"
 			],
@@ -394,10 +442,6 @@
 			[
 				"install p",
 				"Package Control: Install Package"
-			],
-			[
-				"Snippet: ",
-				"Snippet: php-tag"
 			],
 			[
 				"set",
@@ -422,10 +466,6 @@
 			[
 				"java",
 				"Set Syntax: JavaScript"
-			],
-			[
-				"html",
-				"Set Syntax: HTML"
 			],
 			[
 				"htm",
@@ -481,10 +521,68 @@
 	},
 	"expanded_folders":
 	[
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest"
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions"
 	],
 	"file_history":
 	[
+		"/D/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/D/GnRock/Projects/Web Development/Wordpress Things/Update OLD URL to NEW URL SQL Script.txt",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-custom-posts.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/searchvideos.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/header.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/searchform_videos.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/searchform.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/search.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/archive.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/single-video.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/taxonomy-video.php",
+		"/D/GnRock/Downloads/FoundationPress-master/FoundationPress-master/header.php",
+		"/D/GnRock/Downloads/rachelbaker-bootstrapwp-Twitter-Bootstrap-for-WordPress-v.90-release-150-gba90be3/rachelbaker-bootstrapwp-Twitter-Bootstrap-for-WordPress-ba90be3/header.php",
+		"/D/GnRock/Downloads/wp-flex/header.php",
+		"/D/GnRock/Downloads/wp-flex/posthook.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/category.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/twentyfifteen/functions.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/comments.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.css.map",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/home.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/twentyfifteen/page.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/twentyfifteen/index.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-custom-made.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-widget-blocks.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/header.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/twentyfifteen/comments.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/comments.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-comments.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/single.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/functions/functions-comments.php",
+		"/D/GnRock/Downloads/rachelbaker-bootstrapwp-Twitter-Bootstrap-for-WordPress-v.90-release-150-gba90be3/rachelbaker-bootstrapwp-Twitter-Bootstrap-for-WordPress-ba90be3/comments.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/sidebar.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/footer.php",
+		"/D/GnRock/Downloads/instructions.txt",
+		"/D/GnRock/Downloads/html5blank-stable/html5blank-stable/index.php",
+		"/D/GnRock/Downloads/html5blank-stable/html5blank-stable/loop.php",
+		"/D/GnRock/Downloads/html5blank-stable/html5blank-stable/page.php",
+		"/D/GnRock/Downloads/html5blank-stable/html5blank-stable/pagination.php",
+		"/D/GnRock/Downloads/html5blank-stable/html5blank-stable/js/lib/conditionizr-4.3.0.min.js",
+		"/D/GnRock/Downloads/html5blank-stable/html5blank-stable/fonts/readme.txt",
+		"/D/GnRock/Downloads/html5blank-stable/html5blank-stable/functions.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/twentyfifteen/content-page.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/twentyfifteen/content.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-custom-made.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/theloop.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/front-page.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/category.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/front-page.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/css/wordpress-default.css",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/css/wordpress-default.css",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-theme-options.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/Gruntfile.js",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-post.php",
+		"/D/GnRock/Projects/Web Development/Wordpress Things/query_vars.php",
+		"/C/Users/ginsk_000/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/get_header.sublime-snippet",
+		"/C/Users/ginsk_000/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/wp-loop.sublime-snippet",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/page.php",
 		"/C/Users/ginsk_000/Documents/Web Development/Sealyspirit/wp-content/themes/flounder/lib/functions-sidebars.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.css",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/single.php",
@@ -492,12 +590,9 @@
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/search.php.txt",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/thepost_socialmedias.php",
 		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/searchheader.php",
-		"/C/Users/ginsk_000/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/wp-loop.sublime-snippet",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-widgets.php",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/Gruntfile.js",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/Gruntfile.js",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-theme-options.php",
 		"/D/GnRock/Projects/Practice Practice/CSS Practice/Media Queries.txt",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-scripts.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-local-config.php",
@@ -506,7 +601,6 @@
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/.jshintrc",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-widgets.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/bower_components/New folder/bootstrap/dist/css/bootstrap.css",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.css.map",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/fonts/stylesheet.css",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.scss",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/bower_components/bootstrap/dist/js/npm.js",
@@ -516,7 +610,6 @@
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/wordpress template/wp-content/themes/twentyfifteen/header.php",
 		"/D/xampp/htdocs/fme/wp-content/themes/realest/Gruntfile.js",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/home.php",
 		"/C/Users/ginsk_000/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/php-tag.sublime-snippet",
 		"/C/Users/ginsk_000/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
 		"/D/GnRock/Documents/Important User and Password and Other Details.txt",
@@ -524,9 +617,6 @@
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-images.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-images.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-custom-taxonomies.php",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-custom-posts.php",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-custom-made.php",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-comments.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-breadcrumbs.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-scripts.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/package.json",
@@ -535,7 +625,6 @@
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/style.scss",
 		"/D/xampp/htdocs/fme/wp-content/themes/realest/style.scss",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/sites to be practice.txt",
-		"/D/xampp/apache/conf/extra/httpd-vhosts.conf",
 		"/D/xampp/htdocs/whitneya/wp-config.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/installing a new wordpress for local(xampp)",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/index.php",
@@ -543,7 +632,6 @@
 		"/D/xampp/htdocs/fme/wp-content/themes/realest/footer.php",
 		"/D/xampp/htdocs/fme/wp-content/themes/realest/fonts/stylesheet.css",
 		"/D/xampp/htdocs/fme/wp-content/themes/realest/functions/functions-scripts.php",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/header.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/header.php",
 		"/D/xampp/htdocs/whitneya/readme.html",
 		"/D/xampp/htdocs/whitneya/wp-content/index.php",
@@ -565,54 +653,7 @@
 		"/D/xampp/htdocs/fme/wp-content/themes/realest/bower_components/modernizr/lib/build.js",
 		"/D/xampp/htdocs/fme/wp-content/themes/realest/bower_components/modernizr/bin/modernizr",
 		"/D/xampp/htdocs/fme/wp-content/themes/realest/bower_components/modernizr/test/browser/src/Modernizr.js",
-		"/D/xampp/htdocs/fme/wp-content/themes/realest/bower_components/modernizr/src/Modernizr.js",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-scripts.php",
-		"/D/xampp/htdocs/fme/wp-content/themes/realest/functions/functions-widgets.php",
-		"/D/xampp/htdocs/fme/wp-content/themes/realest/functions/functions-theme-options.php",
-		"/D/xampp/htdocs/fme/wp-content/themes/realest/functions/functions-menus.php",
-		"/D/xampp/htdocs/fme/wp-local-config.php",
-		"/D/xampp/htdocs/fme/wp-config.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-menus.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-theme-options.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/js/realest.js",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/footer.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/css/realest.scss",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/style.scss",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/js/realest.js",
-		"/C/Users/ginsk_000/Desktop/LT",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/style.css",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/Gruntfile.js",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-custom-taxonomies.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/page.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/header.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/footer.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/category.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/front-page.php",
-		"/D/xampp/htdocs/backup/wp-content/themes/iamfoodblog/js/customjs.js",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/homeslider.php",
-		"/D/xampp/htdocs/backup/wp-content/themes/iamfoodblog/front-page.php",
-		"/D/xampp/htdocs/backup/wp-content/themes/iamfoodblog/functions/functions-breadcrumbs.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/css/all.css",
-		"/D/xampp/htdocs/backup/wp-content/themes/iamfoodblog/css/custom.css",
-		"/D/xampp/htdocs/backup/wp-content/themes/iamfoodblog/css/theme-fonts.css",
-		"/D/xampp/htdocs/backup/wp-content/themes/iamfoodblog/style.css",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Dropoton JS Nav Menu/index.html",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-widgets.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-shortcodes.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-post.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-menus-bootstrap-walker.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-images.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-custom-posts.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-custom-made.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-comments.php",
-		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions/functions-breadcrumbs.php",
-		"/D/GnRock/Downloads/templated-prism/index.html",
-		"/C/Users/ginsk_000/AppData/Local/Temp/Rar$DIa0.104/main.css",
-		"/C/Users/ginsk_000/AppData/Local/Temp/Rar$DIa0.896/ie9.css",
-		"/C/Users/ginsk_000/AppData/Local/Temp/Rar$DIa0.205/LICENSE.txt",
-		"/D/GnRock/Documents/Resume/Portfolios/FME Finance/details.txt"
+		"/D/xampp/htdocs/fme/wp-content/themes/realest/bower_components/modernizr/src/Modernizr.js"
 	],
 	"find":
 	{
@@ -630,6 +671,32 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"/",
+			"http://prestigeonlineservices.net/",
+			"www.prestigeonlineservices.dev",
+			"http://prestigeonlineservices.net/",
+			"iamfoodblog",
+			"http://leanconsulting.ph",
+			"http://thepadmin-001-site4.atempurl.com",
+			"iswqjhnk23",
+			"Book",
+			"book",
+			"Book",
+			"books",
+			"Books",
+			"books",
+			"Books",
+			"books",
+			"Books",
+			"?>",
+			"<?php",
+			"comment_nav",
+			"container",
+			"blog-container",
+			" ?>",
+			"();\n",
+			"font-size: 15px",
+			"article",
 			"?>",
 			"<?php",
 			"main",
@@ -731,33 +798,7 @@
 			"url",
 			"wpdb",
 			"before",
-			"yourtheme_paging_nav",
-			"nav",
-			"paged",
-			");\n",
-			"tag",
-			"?></",
-			"http://www.newurl",
-			"http://www.oldurl",
-			"get_query_var",
-			"get_search_query",
-			"ul",
-			".search-input",
-			"Post_Tab_Widget",
-			"Foo_Widget",
-			"register_foo_widget",
-			"/*\n\n */",
-			"query",
-			"li",
-			"post",
-			"latest_post",
-			"pre",
-			"nnp_widget_setup",
-			"active",
-			"?>\n",
-			"post",
-			" ?>",
-			"?>\n"
+			"yourtheme_paging_nav"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -775,217 +816,59 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "header.php",
+					"file": "single.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2860,
+						"buffer_size": 767,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								992,
-								992
+								767,
+								767
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 294.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "functions/functions-theme-options.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5848,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								866,
-								866
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7049,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2278,
-								2278
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 991.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "functions/functions-post.php",
+					"buffer": 1,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3956,
+						"buffer_size": 378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3820,
-								3820
+								0,
+								378
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1841.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "home.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2284,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2284,
-								2284
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"auto_name": "",
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 191.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "search.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 636,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								193,
-								193
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "sidebar.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 337,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								337,
-								337
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"auto_name": "<VirtualHost *:80>",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -993,110 +876,41 @@
 					},
 					"stack_index": 2,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 7,
-					"file": "style.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4846,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1938,
-								1938
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1003.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "front-page.php",
+					"buffer": 2,
+					"file": "/D/xampp/apache/conf/extra/httpd-vhosts.conf",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2025,
+						"buffer_size": 2679,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1938,
-								1938
+								2471,
+								2471
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 594.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 0,
-					"file": "header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2860,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1129,
-								1129
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
+					"buffer": 3,
 					"file": "functions/functions-widget-blocks.php",
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
 						"buffer_size": 11437,
@@ -1106,19 +920,200 @@
 						"selection":
 						[
 							[
-								8372,
-								8372
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3632.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2065,
+								2065
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "functions/functions-comments.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1523,
+								1523
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "comments.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2072,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1908,
+								1908
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								902,
+								902
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4119.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "archive-video.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								431,
+								431
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/xampp/htdocs/prestigeonlineservices/wp-config.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3037,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								614,
+								600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1126,33 +1121,119 @@
 				},
 				{
 					"buffer": 10,
-					"file": "functions/functions-custom-made.php",
+					"file": "/D/GnRock/Projects/Web Development/Wordpress Things/Update OLD URL to NEW URL SQL Script.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2543,
+						"buffer_size": 805,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1443,
-								1443
+								805,
+								259
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "searchform_videos.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								598,
+								598
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5407,
+								5407
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4761.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/D/GnRock/Projects/Web Development/Wordpress Things/query_vars.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								351,
+								351
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1186,7 +1267,7 @@
 		"cols":
 		[
 			0.0,
-			0.492252681764,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1258,7 +1339,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

@@ -40,6 +40,4 @@ if( get_option('sticky_back_to_top')) {
 }
 
 
-
-
 ?>
