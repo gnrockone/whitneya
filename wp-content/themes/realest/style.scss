@@ -311,4 +311,33 @@ body {
 
 .blogs-container {
 	padding-bottom: 40px;
+
+}
+.iframe-row {
+	margin-top: 50px;
+}
+#video-carousel {
+	border: 10px solid $black;
+	margin-top: 30px;
+	.video-slide.item {
+		padding: 10px;
+	}
+}
+h4.video-title {
+	color: #525252;
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-align: center;
+    margin: 8px 0 0;
+    font-weight: normal;
+    height: 36px;
+    overflow: hidden;
+}
+.writing-container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.thewriting-title {
+		font-size: 15px;
+		line-height: 25px;
+	}
 }
