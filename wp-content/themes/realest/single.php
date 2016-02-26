@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 	<?php //set_post_views( get_the_ID() );?>
+	<?php //bootstrapwp_breadcrumbs(); ?>
 	<div class="container blogs-container">
 		<?php get_template_part('sidebar'); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

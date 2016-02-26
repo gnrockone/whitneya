@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 	<?php $category = get_queried_object();
 	$value = $category->name; ?>
-	<section class="search-label-container">
-		<h1 id="search-label" class="text-center">Search for > <?php echo $value; ?></h1>
+	<section class="category-label-container">
+		<h1 id="category-label" class="text-center">Category > <span class="label-value"><?php echo $value; ?></span></h1>
 	</section>
 	<div class="container blogs-container">
 		<?php get_sidebar('sidebar');

@@ -20,7 +20,7 @@
 			
 				<?php foreach($posts as $post): ?>
 					<article id="<?php echo $post->ID; ?>" class="">
-						<h5><strong><i><?php echo $post->post_title; ?></i></strong> by <?php echo the_author_meta('user_nicename', $post->post_author); ?></h5>
+						<h5 class="thewriting-title"><strong><i><?php echo $post->post_title; ?></i></strong> by <?php echo the_author_meta('user_nicename', $post->post_author); ?></h5>
 						<div class="thepost-content">
 							<?php echo $post->post_content; ?>
 						</div>

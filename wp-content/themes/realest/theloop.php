@@ -4,7 +4,8 @@
 		<span class="thepost-date"><?php the_time('l, F j, Y'); ?> / </span>
 		<span class="glyphicon glyphicon-comment thepost-comments"><?php comments_number('0', '1', '%' );?> /</span>
 		<span class="glyphicon glyphicon-cloud thepost-categories"><?php the_category(", "); ?> /</span>
-		<span class="glyphicon glyphicon-tags thepost-tags"><?php the_tags(); ?> /</span>
+		<span class="glyphicon glyphicon-tags thepost-tags"><?php echo $tags = (has_tag()) ? the_tags() : 'No tags';
+		?> /</span>
 		<span class="glyphicon glyphicon-heart-empty thepost-like">0</span>
 	</div>
 	<div class="thepost-content"><?php the_content(); ?></div>

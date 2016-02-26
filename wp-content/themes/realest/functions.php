@@ -19,6 +19,9 @@ require get_template_directory() . '/functions/functions-widget-blocks.php';
 	==================================================
  */
 
+define('THEME_GRAND_NAME','Realest'); //The mother of all themes
+define('THEME_SLUG','Realest');
+
 //feature: 'custom-background' - adds background in the appearance menu in the dashboard
 add_theme_support('custom-background');
 //example. add_theme_support('post-formats',('aside','gallery','link'));
@@ -33,7 +36,9 @@ add_theme_support('title-tag');
 
 
 function rl_go_top_btn() {
-	echo '<a href="#" class="go-top">Go Top</a>';
+	echo '<!--I am located in functions.php-->';
+	echo '<a href="#" class="go-top"><i class="fa fa-arrow-up"></i></a>';
+	echo '<!--End: I am located in functions.php-->';
 }
 if( get_option('sticky_back_to_top')) { 
 	add_action('before_body_end','rl_go_top_btn'); 
